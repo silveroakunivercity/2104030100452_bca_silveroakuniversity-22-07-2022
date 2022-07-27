@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="program2.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM FOR COMMUNICATION WITH CUSTOMER</title>
+    <script type="text/javascript">
+        function alertIN(){
+            alert("THIS SHOP ARE SOLD PRODUCTS ARE BRANDED");
+        }
+        function confirmIN(){
+            {
+				if(confirm("ARE YOU BUYING ANY PRODUCTS")){
+					alert("YES");
+				}
+				else{
+					alert("NO");
+				}
+			}
+        }
+        function PromptIN(){
+				var PName=prompt("WHICH PRODUCT ARE YOU FIND");
+				var BName=prompt("WHICH BRAND ARE YOU FIND");
+                var PTYPE=prompt("WHICH PRODUCT TYPE ARE YOU FIND");
+				alert(PName+" "+"IN"+" "+BName+" "+"BRAND"+" "+" "+"AND"+" "+"ARE"+" "+PTYPE+" "+"TYPES");
+        }
+    </script>
+    <STyle>
+        body{
+            text-align: center;
+            font-size: 2.5vh;
+            background-color: rgb(248, 172, 145);
+            color: rgb(251, 18, 18);
+            
+        }
+        #DIV1{
+            border: 5px solid rgb(17, 17, 14);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #DIV2{
+            border: 5px solid rgb(14, 15, 12);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        #DIV3{
+            border: 5px solid rgb(17, 17, 14);
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        input{
+            margin-bottom: 10px;
+            background-color: rgb(253, 253, 160);
+            width: 100px;
+            border-radius: 15px;
+            height: 32px;
+        }
+    </STyle>
+</head>
+<body>
+    <marquee><h1>THE clothes SHOP..</h1></marquee>
+    <div id="DIV1">
+        <span>ALERT INLINE</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="alert('WELCOME MEM/sir..')"/>
+    </div>
+    <div id="DIV1">
+        <span>ALERT INTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="alertIN()"/>
+    </div>
+    <div id="DIV1">
+        <span>ALERT EXTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="alertEX()"/>
+    </div>
+    <div id="DIV2">
+        <span>CONFIRM INLINE</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="confirm('CAN YOU BUYING ANY cloths')"/>
+    </div>
+    <div id="DIV2">
+        <span>CONFIRM INTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="confirmIN()"/>
+    </div>
+    <div id="DIV2">
+        <span>CONFIRM EXTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="confirmEX()"/>
+    </div>
+    <div id="DIV3">
+        <span>PROMPT INLINE</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="prompt('ENTER YOUR NAME')"/>
+    </div>
+    <div id="DIV3">
+        <span>PROMPT INTERNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="PromptIN()"/>
+    </div>
+    <div id="DIV3">
+        <span>PROMPT EXTERNNAL</span><br><br>
+        <br>
+        <input type="button" value="CLICK" onclick="PromptEX()"/>
+    </div>
+</body>
+</html>
